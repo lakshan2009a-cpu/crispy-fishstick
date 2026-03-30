@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JSON Page</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: monospace;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<pre id="output"></pre>
+
+<script>
+  const data = {
+    "expiry": "2026-03-23"
+  };
+
+  document.getElementById("output").textContent =
+    JSON.stringify(data, null, 2);
+</script>
+
+</body>
+</html>
